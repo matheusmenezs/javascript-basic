@@ -13,6 +13,13 @@
     <input type="text" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
     <div id = "res">Resultado</div>
+
+    <h1 id = "sub"> Subtraindo valores</h1>
+    <input type="text" name="txt3" id="txt3">
+    <input type="text" name="txt4" id="txt4">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id = "resub"> Resultado </div>
+
     <script>
         function somar(){
             var tn1 = window.document.getElementById("txtn1")
@@ -20,6 +27,16 @@
             var res = window.document.getElementById("res")
             var s = Number(tn1.value) + Number(tn2.value)
             res.innerHTML = `A soma entre ${tn1.value} e ${tn2.value} é <strong>${s}</strong>`
+        }
+
+
+        function subtrair(){
+            var1 = window.document.getElementById("txt3")
+            var2 = window.document.getElementById("txt4")
+            var n1 = Number(var1.value)
+            var n2 = Number(var2.value)
+            var s = n1 - n2
+            resub.innerHTML = `A subtração entre ${n1} e ${n2} é <strong>${s}</strong>`
         }
     </script>
 </body>
