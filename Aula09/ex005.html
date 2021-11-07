@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Conceitos do <strong>DOM</strong></p>
+    <p><strong>Lorem</strong> ipsum dolor sit amet.</p>
+    <div id = "msg">Clique aqui</div>
+    <script>
+        //Seleção por Tag:
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]; //Seleciona elementos pela TAG. Posição 0: primeiro paragráfo.
+        window.document.write('Elementos do parágrafo: <br>' + p1.innerText) //innerText: Conteúdo textual armazenado na variável.
+        //window.document.write('Elementos do parágrafo: <br>' + p1.innerHTML) //innerhtml: funciona como inner text mas mantém a formatação do html
+        corpo.style.background = 'gray' //altera background do body, armazenado na variável corpo
+        p1.style.color = 'red' //altera cor do primeiro paragráfo, armazenado na variável p1
+
+        //Seleção por ID:
+        var i = window.document.getElementById('msg') //seleciona elemento pelo id que foi definido
+        i.style.background = 'white'
+        i.style.color = 'Black'
+    /*
+        //Seleção por nome:
+        var n = window.document.getElementsByName('msg')[0]
+        n.innerText = 'Olá'
+
+        //Seleção por classe:
+        var c = window.document.getElementsByClassName('msg')[0]
+        c.innerText = 'Alter'
+        
+        //Seleção por selector
+        var s = window.document.querySelector('div#msg') //seleciona elemento pelo seletor. id = #  | class = .
+        s.innerText = 'New'
+    */
+    </script>
+</body>
+</html>
