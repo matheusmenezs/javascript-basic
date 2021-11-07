@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(107, 107, 248);
+    font: Normal 15pt Arial;
+    color: white;
+
+}
+
+div#res{
+    margin-top: 20px;
+}
+
+div#area{
+    background-color: green;
+    color: white;
+    font: normal 15pt Arial;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
