@@ -1,0 +1,11 @@
+h1{
+    color: red;
+}
+
+p#idade{
+    font-size: larger;
+}
+
+div#res{
+    margin-top: 15px;
+}
